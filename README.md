@@ -77,6 +77,7 @@ The latest stable version of Terraform which this module tested working is Terra
 | <a name="input_lb_idle_timeout"></a> [lb\_idle\_timeout](#input\_lb\_idle\_timeout) | The LB's idle timeout | `string` | `60` | no |
 | <a name="input_lb_internal"></a> [lb\_internal](#input\_lb\_internal) | Whether the LB will be public / private | `string` | `"1"` | no |
 | <a name="input_lb_ip_address_type"></a> [lb\_ip\_address\_type](#input\_lb\_ip\_address\_type) | The LB's ip address type | `string` | `"ipv4"` | no |
+| <a name="input_lb_drop_invalid_header_fields"></a> [lb\_drop\_invalid\_header\_fields](#input\_lb\_drop\_invalid\_header\_fields) | The LB's attribute to drop invalid header fields | `string` | `true` | no |
 | <a name="input_lb_logs_s3_bucket_name"></a> [lb\_logs\_s3\_bucket\_name](#input\_lb\_logs\_s3\_bucket\_name) | The S3 bucket that will be used to store LB access logs | `string` | n/a | yes |
 | <a name="input_lb_name"></a> [lb\_name](#input\_lb\_name) | The name of the LB, will override the default <service\_name>-<lb\_type>-<random\_string> name | `string` | `""` | no |
 | <a name="input_lb_security_groups"></a> [lb\_security\_groups](#input\_lb\_security\_groups) | List of security group IDs for the LB | `list(string)` | n/a | yes |

@@ -15,9 +15,10 @@ resource "aws_lb" "main" {
 
   security_groups = var.lb_security_groups
 
-  subnets         = var.lb_subnet_ids
-  idle_timeout    = var.lb_idle_timeout
-  ip_address_type = var.lb_ip_address_type
+  subnets                    = var.lb_subnet_ids
+  idle_timeout               = var.lb_idle_timeout
+  ip_address_type            = var.lb_ip_address_type
+  drop_invalid_header_fields = var.lb_drop_invalid_header_fields
 
   access_logs {
     bucket  = var.lb_logs_s3_bucket_name

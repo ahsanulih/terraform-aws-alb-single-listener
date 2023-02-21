@@ -31,6 +31,12 @@ variable "lb_ip_address_type" {
   description = "The LB's ip address type"
 }
 
+variable "lb_drop_invalid_header_fields" {
+  type        = string
+  default     = true
+  description = "The LB's attribute to drop invalid header fields"
+}
+
 variable "lb_idle_timeout" {
   type        = string
   default     = 60
