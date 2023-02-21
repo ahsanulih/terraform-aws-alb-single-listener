@@ -33,7 +33,7 @@ variable "lb_ip_address_type" {
 
 variable "lb_drop_invalid_header_fields" {
   type        = string
-  default     = true
+  default     = false
   description = "The LB's attribute to drop invalid header fields"
 }
 
